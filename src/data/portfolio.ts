@@ -8,7 +8,7 @@ export const siteConfig = {
   location: "Bloomington, Indiana | Open to relocate (U.S.)",
   website: "https://www.parvezshaik.com",
   linkedin: "https://www.linkedin.com/in/parvezshaik44/",
-  github: "https://github.com/Parvez4",
+  github: "https://github.com/ParvezSK3",
   trailhead: "https://www.salesforce.com/trailblazer/parvez",
   availability: "Open to Salesforce Opportunities",
   /** Place PDF in public/parvez-shaik-resume.pdf */

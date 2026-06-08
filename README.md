@@ -110,7 +110,7 @@ Salesforce_Portfolio/
 ### Install and run
 
 ```bash
-git clone https://github.com/Parvez4/Portfolio.git
+git clone https://github.com/ParvezSK3/Portfolio_Salesforce.git
 cd Portfolio
 npm install
 npm run dev
@@ -249,5 +249,5 @@ This project is for personal portfolio use. All content, branding, and assets ar
 
 - **Email:** parvezshaik3008@gmail.com
 - **LinkedIn:** [linkedin.com/in/parvezshaik44](https://www.linkedin.com/in/parvezshaik44/)
-- **GitHub:** [github.com/Parvez4](https://github.com/Parvez4)
+- **GitHub:** [github.com/ParvezSK3](https://github.com/ParvezSK3)
 - **Trailhead:** [Salesforce Trailblazer profile](https://www.salesforce.com/trailblazer/parvez)

@@ -23,4 +23,4 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## Portfolio
 
-Part of [Parvez Shaik](https://github.com/Parvez4) Salesforce developer portfolio.
+Part of [Parvez Shaik](https://github.com/ParvezSK3) Salesforce developer portfolio.

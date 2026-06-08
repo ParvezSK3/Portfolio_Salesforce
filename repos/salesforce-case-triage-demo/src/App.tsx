@@ -22,7 +22,7 @@ function DemoShell({
       <header className="border-b border-slate-800/80 bg-slate-950/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
           <a
-            href="https://github.com/Parvez4"
+            href="https://github.com/ParvezSK3"
             className="inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-white"
           >
             <ArrowLeft className="size-4" />

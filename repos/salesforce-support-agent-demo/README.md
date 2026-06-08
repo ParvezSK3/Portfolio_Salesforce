@@ -20,4 +20,4 @@ npm run dev
 
 ## Portfolio
 
-Part of [Parvez Shaik](https://github.com/Parvez4) Salesforce developer portfolio.
+Part of [Parvez Shaik](https://github.com/ParvezSK3) Salesforce developer portfolio.
