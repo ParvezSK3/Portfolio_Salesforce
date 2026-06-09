@@ -5,6 +5,7 @@ import {
   Bot,
   Calendar,
   Database,
+  ExternalLink,
   Sparkles,
   Star,
   TrendingUp,
@@ -100,6 +101,19 @@ export function Projects() {
                       </li>
                     ))}
                   </ul>
+
+                  {"demoUrl" in project && project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`mt-5 inline-flex w-fit items-center gap-2 rounded-full border border-slate-700/80 bg-slate-950/80 px-4 py-2 text-sm font-semibold ${accent} transition hover:border-slate-500 hover:bg-slate-900`}
+                      aria-label={`Open live demo for ${project.title}`}
+                    >
+                      <ExternalLink className="size-4" />
+                      Live demo
+                    </a>
+                  )}
                 </div>
 
                 <div

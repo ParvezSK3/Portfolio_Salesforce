@@ -11,8 +11,8 @@ export const siteConfig = {
   github: "https://github.com/ParvezSK3",
   trailhead: "https://www.salesforce.com/trailblazer/parvez",
   availability: "Open to Salesforce Opportunities",
-  /** Place PDF in public/parvez-shaik-resume.pdf */
-  resumeUrl: "/parvez-shaik-resume.pdf",
+  /** Place PDF in public/parvez-shaik-resume-sd.pdf */
+  resumeUrl: "/parvez-shaik-resume-sd.pdf",
   resumeDownloadName: "Parvez_Shaik_Resume.pdf",
 };
 
@@ -227,6 +227,8 @@ export const projects = [
       { label: "Manual case review", value: "−29.4%" },
       { label: "Release rework", value: "−18%" },
     ],
+    demoUrl:
+      "https://parvezsk3.github.io/crm-case-automation-release-stability/",
     description:
       "Built a case triage flow using LWC, Apex, SOQL, Flows, Platform Events, and Permission Sets, reducing manual case review steps by 29.4% in test scenarios. Connected an external status service through REST APIs and added validation checks before Salesforce DX, Git, and Jenkins deployments, cutting release rework by 18%.",
   },
@@ -251,6 +253,8 @@ export const projects = [
       { label: "Manual case review", value: "−31.2%" },
       { label: "Overdue follow-up", value: "−22.8%" },
     ],
+    demoUrl:
+      "https://parvezsk3.github.io/service-case-automation-support-console/",
     description:
       "Built a Service Cloud case console with LWC, Apex, SOQL, Flows, Apex Triggers, and Test Classes, reducing manual case review by 31.2% in test scenarios. Added SLA routing, REST status lookup, and integration logs with Custom Metadata, Platform Events, Batch and Queueable Apex, Named Credentials, OAuth, Data Loader, and ETL checks, cutting overdue case follow-up time by 22.8%.",
   },
@@ -273,6 +277,7 @@ export const projects = [
       "REST APIs",
     ],
     metrics: [{ label: "Average handling time", value: "−24.6%" }],
+    demoUrl: "https://parvezsk3.github.io/ai-driven-case-triage-resolution/",
     description:
       "Built an Agentforce case triage system with Prompt Builder, Generative AI, RAG, Apex, LWC, and Flows, with Einstein Trust Layer controls for sensitive data. Pulled CRM context from Data Cloud through REST APIs and surfaced case recommendations in a custom LWC, cutting average handling time by 24.6%.",
   },
