@@ -20,8 +20,8 @@ export function AboutSkillsBridge() {
               Certified & building
             </p>
             <p className="mt-1.5 max-w-xl text-sm text-slate-400">
-              {siteConfig.availability}. Four credentials across Apex, LWC,
-              Agentforce, and Data Cloud.
+              {siteConfig.availability}. Three Salesforce credentials across
+              Apex, LWC, administration, and app building.
             </p>
           </motion.div>
           <a

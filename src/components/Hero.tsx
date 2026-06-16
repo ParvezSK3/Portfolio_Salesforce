@@ -23,7 +23,7 @@ const stats: {
   glow: string;
 }[] = [
   {
-    value: "3+",
+    value: "5+",
     label: "Years Salesforce",
     tag: "Experience",
     icon: Cloud,
@@ -47,7 +47,7 @@ const stats: {
     glow: "from-violet-500/25",
   },
   {
-    value: "4",
+    value: "3",
     label: "Certifications",
     tag: "Credentials",
     icon: Award,
