@@ -26,7 +26,7 @@ export function Education() {
     >
       <div className="relative">
         <div
-          className="absolute left-[1.65rem] top-4 hidden h-[calc(100%-2rem)] w-px bg-gradient-to-b from-sky-500/40 via-amber-500/30 to-transparent md:block"
+          className="absolute left-[1.65rem] top-4 hidden h-[calc(100%-2rem)] w-px bg-gradient-to-b from-brand-500/40 via-brand-400/25 to-transparent md:block"
           aria-hidden
         />
 
@@ -97,7 +97,7 @@ export function Education() {
                       </motion.div>
 
                       {item.status && (
-                        <span className="inline-flex items-center gap-1 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-300">
+                        <span className="inline-flex items-center gap-1 rounded-lg border border-brand-500/30 bg-brand-500/10 px-2.5 py-1 text-xs font-medium text-brand-300">
                           <Sparkles className="size-3" />
                           {item.status}
                         </span>

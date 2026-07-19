@@ -2,27 +2,18 @@
 
 import { motion } from "framer-motion";
 import {
-  ArrowUpRight,
   Briefcase,
   Building2,
-  CircleDot,
+  CheckCircle2,
   Code2,
   MapPin,
-  Sparkles,
-  TrendingUp,
-  Users,
-  Zap,
 } from "lucide-react";
 import { Section } from "@/components/Section";
 import { experience, experienceSection } from "@/data/portfolio";
 
 const categoryIcons: Record<string, typeof Briefcase> = {
   Salesforce: Code2,
-  "AI Engineering": Sparkles,
-  Leadership: Users,
 };
-
-const highlightMarkers = [Sparkles, Zap, TrendingUp, CircleDot, ArrowUpRight];
 
 function companyInitial(company: string) {
   return company
@@ -134,13 +125,16 @@ export function Experience() {
 
                   <motion.ul className="relative grid gap-2 border-t border-slate-800/60 bg-slate-950/30 px-5 py-4 sm:grid-cols-2 sm:px-6 sm:py-5">
                     {job.highlights.map((point, i) => {
-                      const Marker = highlightMarkers[i % highlightMarkers.length];
+                      const spansFullRow =
+                        job.highlights.length % 2 === 1 &&
+                        i === job.highlights.length - 1;
+
                       return (
                         <motion.li
                           key={point}
-                          className="flex gap-3 rounded-lg border border-slate-800/50 border-l-2 border-l-brand-500/50 bg-slate-900/40 py-2.5 pl-3 pr-3 text-sm leading-relaxed text-slate-400 transition group-hover:border-slate-700/60 group-hover:border-l-brand-400/70"
+                          className={`flex gap-3 rounded-lg border border-slate-800/50 border-l-2 border-l-brand-500/50 bg-slate-900/40 py-2.5 pl-3 pr-3 text-sm leading-relaxed text-slate-400 transition group-hover:border-slate-700/60 group-hover:border-l-brand-400/70 ${spansFullRow ? "sm:col-span-2" : ""}`}
                         >
-                          <Marker
+                          <CheckCircle2
                             className={`mt-0.5 size-4 shrink-0 ${accent}`}
                             strokeWidth={1.75}
                           />

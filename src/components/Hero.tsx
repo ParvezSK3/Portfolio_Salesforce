@@ -8,11 +8,11 @@ import {
   Cloud,
   Linkedin,
   MapPin,
-  Sparkles,
   Users,
+  Zap,
   type LucideIcon,
 } from "lucide-react";
-import { siteConfig } from "@/data/portfolio";
+import { certifications, siteConfig } from "@/data/portfolio";
 
 const stats: {
   value: string;
@@ -35,24 +35,24 @@ const stats: {
     label: "CRM users supported",
     tag: "Scale",
     icon: Users,
-    accent: "text-cyan-400",
-    glow: "from-cyan-500/25",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
   },
   {
-    value: "63.9%",
-    label: "AI auto-resolution",
-    tag: "Automation",
-    icon: Sparkles,
-    accent: "text-violet-400",
-    glow: "from-violet-500/25",
+    value: "28%",
+    label: "Release review cut",
+    tag: "Delivery",
+    icon: Zap,
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
   },
   {
-    value: "3",
+    value: String(certifications.length),
     label: "Certifications",
     tag: "Credentials",
     icon: Award,
-    accent: "text-amber-400",
-    glow: "from-amber-500/25",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
   },
 ];
 
@@ -111,7 +111,7 @@ export function Hero() {
         transition={{ duration: 1.2 }}
       />
       <motion.div
-        className="pointer-events-none absolute -top-32 left-1/2 z-0 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-brand-500/20 blur-[120px]"
+        className="pointer-events-none absolute -top-32 left-1/2 z-0 h-[28rem] w-[calc(100vw-2rem)] max-w-[28rem] -translate-x-1/2 rounded-full bg-brand-500/20 blur-[120px]"
         animate={{ scale: [1, 1.08, 1], opacity: [0.35, 0.5, 0.35] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />

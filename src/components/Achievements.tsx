@@ -43,7 +43,7 @@ export function Achievements() {
                 <div className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-brand-500/20 bg-brand-500/10 text-brand-400">
                   <Icon className="size-5" strokeWidth={1.75} />
                 </div>
-                <span className="rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-amber-300">
+                <span className="rounded-full border border-brand-500/30 bg-brand-500/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-brand-300">
                   {achievement.result}
                 </span>
               </div>
@@ -69,7 +69,7 @@ export function Achievements() {
                       key={highlight}
                       className="flex gap-2 rounded-lg border border-slate-800/60 bg-slate-950/40 px-3 py-2 text-sm leading-relaxed text-slate-400"
                     >
-                      <Award className="mt-0.5 size-3.5 shrink-0 text-amber-400" />
+                      <Award className="mt-0.5 size-3.5 shrink-0 text-brand-400" />
                       {highlight}
                     </li>
                   ))}

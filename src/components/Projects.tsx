@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import {
   Bot,
-  Calendar,
   Database,
   ExternalLink,
   Sparkles,
@@ -61,18 +60,14 @@ export function Projects() {
                       className={`inline-flex items-center gap-1.5 rounded-full border border-slate-700/80 bg-slate-950/80 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${accent}`}
                     >
                       <Icon className="size-3" />
-                      Agentforce
+                      {project.category ?? project.period}
                     </span>
                     {isFeatured && (
-                      <span className="inline-flex items-center gap-1 rounded-full border border-amber-500/30 bg-amber-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-amber-300">
+                      <span className="inline-flex items-center gap-1 rounded-full border border-brand-500/30 bg-brand-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-brand-300">
                         <Star className="size-3 fill-amber-400/80" />
                         Flagship
                       </span>
                     )}
-                    <span className="inline-flex items-center gap-1 text-xs text-slate-500">
-                      <Calendar className="size-3" />
-                      {project.period}
-                    </span>
                   </div>
 
                   <h3

@@ -129,7 +129,7 @@ export function Contact() {
             className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-400 sm:w-auto"
           >
             <Send className="size-4" />
-            {status === "sent" ? "Opening email client…" : "Send message"}
+            {status === "sent" ? "Opening email client..." : "Send message"}
           </button>
         </form>
       </div>

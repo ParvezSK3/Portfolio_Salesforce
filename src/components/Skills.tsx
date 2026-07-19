@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import {
-  Award,
   Cloud,
   GitBranch,
   Plug,
@@ -16,55 +15,37 @@ import { skillCategories } from "@/data/portfolio";
 
 const categoryMeta: Record<
   string,
-  { icon: LucideIcon; accent: string; glow: string; span: string }
+  { icon: LucideIcon; accent: string; glow: string }
 > = {
-  Certifications: {
-    icon: Award,
-    accent: "text-amber-400",
-    glow: "from-amber-500/20",
-    span: "sm:col-span-2 lg:col-span-2",
-  },
-  "Salesforce Clouds": {
-    icon: Cloud,
-    accent: "text-sky-400",
-    glow: "from-sky-500/20",
-    span: "sm:col-span-2",
-  },
-  "AI & Data Cloud": {
-    icon: Sparkles,
-    accent: "text-violet-400",
-    glow: "from-violet-500/25",
-    span: "lg:col-span-2",
-  },
-  "Salesforce Development": {
+  "Salesforce Platform": {
     icon: Cloud,
     accent: "text-brand-400",
+    glow: "from-brand-500/20",
+  },
+  "Development & Automation": {
+    icon: Workflow,
+    accent: "text-brand-400",
     glow: "from-brand-500/25",
-    span: "lg:row-span-2",
   },
   "Integrations & APIs": {
     icon: Plug,
-    accent: "text-cyan-400",
-    glow: "from-cyan-500/20",
-    span: "",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
   },
-  "Automation & Platform": {
-    icon: Workflow,
-    accent: "text-emerald-400",
-    glow: "from-emerald-500/20",
-    span: "",
-  },
-  "DevOps & Tools": {
+  "DevOps & Testing": {
     icon: GitBranch,
-    accent: "text-orange-400",
-    glow: "from-orange-500/20",
-    span: "",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
   },
-  "Data & Security": {
+  "Architecture & Security": {
     icon: Shield,
-    accent: "text-rose-400",
-    glow: "from-rose-500/20",
-    span: "sm:col-span-2",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
+  },
+  "Business Analysis & Delivery": {
+    icon: Sparkles,
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
   },
 };
 
@@ -72,62 +53,19 @@ const defaultMeta = {
   icon: Cloud,
   accent: "text-brand-400",
   glow: "from-brand-500/20",
-  span: "",
 };
 
-function SkillsMarquee({ skills }: { skills: string[] }) {
-  const track = [...skills, ...skills];
-
-  return (
-    <div className="relative -mt-4 mb-10 overflow-hidden rounded-2xl border border-slate-800/60 bg-slate-950/50 py-3.5">
-      <motion.div
-        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-slate-950 to-transparent"
-        aria-hidden
-      />
-      <motion.div
-        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-slate-950 to-transparent"
-        aria-hidden
-      />
-      <motion.div
-        className="flex w-max gap-3 px-3"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{
-          x: {
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 55,
-            ease: "linear",
-          },
-        }}
-      >
-        {track.map((skill, i) => (
-          <span
-            key={`${skill}-${i}`}
-            className="shrink-0 rounded-full border border-slate-700/60 bg-slate-900/80 px-4 py-1.5 text-xs font-medium text-slate-300"
-          >
-            {skill}
-          </span>
-        ))}
-      </motion.div>
-    </div>
-  );
-}
-
 export function Skills() {
-  const allSkills = skillCategories.flatMap((c) => c.skills);
-
   return (
     <Section
       id="skills"
       label="Skills"
       title="Technical expertise"
-      description="Salesforce development, AI on platform, integrations, and enterprise DevOps."
+      description="Salesforce platform development, automation, integrations, DevOps, security, and delivery skills from the current resume."
       spacing="tight-top"
       className="bg-slate-900/20"
     >
-      <SkillsMarquee skills={allSkills} />
-
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-[auto_auto_auto]">
+      <div className="grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {skillCategories.map((category, index) => {
           const meta = categoryMeta[category.title] ?? defaultMeta;
           const Icon = meta.icon;
@@ -135,7 +73,7 @@ export function Skills() {
           return (
             <motion.article
               key={category.title}
-              className={`group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-900/40 p-5 backdrop-blur-sm transition hover:border-slate-700 ${meta.span}`}
+              className="group relative h-full overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-900/40 p-5 backdrop-blur-sm transition hover:border-slate-700"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
