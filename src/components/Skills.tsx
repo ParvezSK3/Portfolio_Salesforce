@@ -20,51 +20,45 @@ const categoryMeta: Record<
 > = {
   Certifications: {
     icon: Award,
-    accent: "text-amber-400",
-    glow: "from-amber-500/20",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
     span: "sm:col-span-2 lg:col-span-2",
   },
-  "Salesforce Clouds": {
+  "Salesforce Platform": {
     icon: Cloud,
-    accent: "text-sky-400",
-    glow: "from-sky-500/20",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
     span: "sm:col-span-2",
   },
-  "AI & Data Cloud": {
-    icon: Sparkles,
-    accent: "text-violet-400",
-    glow: "from-violet-500/25",
-    span: "lg:col-span-2",
-  },
-  "Salesforce Development": {
-    icon: Cloud,
+  "Development & Automation": {
+    icon: Workflow,
     accent: "text-brand-400",
     glow: "from-brand-500/25",
     span: "lg:row-span-2",
   },
   "Integrations & APIs": {
     icon: Plug,
-    accent: "text-cyan-400",
-    glow: "from-cyan-500/20",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
     span: "",
   },
-  "Automation & Platform": {
-    icon: Workflow,
-    accent: "text-emerald-400",
-    glow: "from-emerald-500/20",
-    span: "",
-  },
-  "DevOps & Tools": {
+  "DevOps & Testing": {
     icon: GitBranch,
-    accent: "text-orange-400",
-    glow: "from-orange-500/20",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
     span: "",
   },
-  "Data & Security": {
+  "Architecture & Security": {
     icon: Shield,
-    accent: "text-rose-400",
-    glow: "from-rose-500/20",
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
     span: "sm:col-span-2",
+  },
+  "Business Analysis & Delivery": {
+    icon: Sparkles,
+    accent: "text-brand-400",
+    glow: "from-brand-500/20",
+    span: "lg:col-span-2",
   },
 };
 
@@ -79,7 +73,7 @@ function SkillsMarquee({ skills }: { skills: string[] }) {
   const track = [...skills, ...skills];
 
   return (
-    <div className="relative -mt-4 mb-10 overflow-hidden rounded-2xl border border-slate-800/60 bg-slate-950/50 py-3.5">
+    <div className="relative -mt-4 mb-10 h-14 max-w-full overflow-hidden rounded-2xl border border-slate-800/60 bg-slate-950/50 [contain:layout_paint]">
       <motion.div
         className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-slate-950 to-transparent"
         aria-hidden
@@ -89,7 +83,7 @@ function SkillsMarquee({ skills }: { skills: string[] }) {
         aria-hidden
       />
       <motion.div
-        className="flex w-max gap-3 px-3"
+        className="absolute left-0 top-1/2 flex w-max -translate-y-1/2 gap-3 px-3"
         animate={{ x: ["0%", "-50%"] }}
         transition={{
           x: {
@@ -121,7 +115,7 @@ export function Skills() {
       id="skills"
       label="Skills"
       title="Technical expertise"
-      description="Salesforce development, AI on platform, integrations, and enterprise DevOps."
+      description="Salesforce platform development, automation, integrations, DevOps, security, and delivery skills from the current resume."
       spacing="tight-top"
       className="bg-slate-900/20"
     >

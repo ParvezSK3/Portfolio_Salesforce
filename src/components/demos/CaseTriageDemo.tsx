@@ -97,7 +97,7 @@ export function CaseTriageDemo() {
                 </div>
               </div>
               <div className="rounded-2xl border border-slate-800/80 bg-slate-900/50 p-5">
-                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-400">
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-400">
                   <CheckCircle2 className="size-4" /> Recommended actions
                 </p>
                 <ul className="mt-3 list-inside list-disc space-y-2 text-sm text-slate-400">
@@ -107,7 +107,7 @@ export function CaseTriageDemo() {
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-800/80 bg-slate-900/50 p-5">
-                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-violet-400">
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-400">
                   <Shield className="size-4" /> Trust Layer (masked)
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">{masked}</p>

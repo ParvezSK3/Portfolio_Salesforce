@@ -21,7 +21,7 @@ export function AboutSkillsBridge() {
             </p>
             <p className="mt-1.5 max-w-xl text-sm text-slate-400">
               {siteConfig.availability}. Three Salesforce credentials across
-              Apex, LWC, administration, and app building.
+              development, platform administration, and app building.
             </p>
           </motion.div>
           <a
@@ -45,7 +45,7 @@ export function AboutSkillsBridge() {
               key={cert.name}
               className="inline-flex items-center gap-1.5 rounded-full border border-slate-700/70 bg-slate-950/60 px-3 py-1.5 text-xs text-slate-300"
             >
-              <Award className="size-3 shrink-0 text-amber-400/90" />
+              <Award className="size-3 shrink-0 text-brand-400/90" />
               {cert.shortName}
             </li>
           ))}

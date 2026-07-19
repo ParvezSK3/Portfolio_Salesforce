@@ -85,8 +85,8 @@ export function KnowledgeBotDemo() {
       </form>
 
       {answer && (
-        <div className="mt-6 rounded-2xl border border-cyan-500/30 bg-cyan-500/10 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-cyan-400">
+        <div className="mt-6 rounded-2xl border border-brand-500/30 bg-brand-500/10 p-5">
+          <p className="text-xs font-semibold uppercase tracking-wider text-brand-400">
             Generated answer
           </p>
           <p className="mt-2 text-sm leading-relaxed text-slate-300">{answer}</p>

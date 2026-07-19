@@ -4,30 +4,31 @@
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
-  --color-slate-950: #020617;
-  --color-slate-900: #0f172a;
-  --color-slate-800: #1e293b;
-  --color-slate-700: #334155;
-  --color-slate-600: #475569;
-  --color-slate-500: #64748b;
-  --color-slate-400: #94a3b8;
-  --color-slate-300: #cbd5e1;
-  --color-slate-200: #e2e8f0;
-  --color-slate-100: #f1f5f9;
-  --color-slate-50: #f8fafc;
+  --color-slate-950: #010205;
+  --color-slate-900: #070910;
+  --color-slate-800: #171b25;
+  --color-slate-700: #2a3140;
+  --color-slate-600: #525c6d;
+  --color-slate-500: #7f8795;
+  --color-slate-400: #b5bac4;
+  --color-slate-300: #dce0e6;
+  --color-slate-200: #f0f3f7;
+  --color-slate-100: #fafbfc;
+  --color-slate-50: #ffffff;
 
-  --color-brand-500: #3b82f6;
-  --color-brand-400: #60a5fa;
-  --color-brand-300: #93c5fd;
+  --color-brand-500: #7aa7ff;
+  --color-brand-400: #a9c5ff;
+  --color-brand-300: #d9e6ff;
 }
 
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
+  overflow-x: hidden;
 }
 
 body {
-  @apply bg-slate-950 text-slate-200 antialiased;
+  @apply overflow-x-hidden bg-slate-950 text-slate-200 antialiased;
 }
 
 ::selection {
@@ -51,15 +52,13 @@ body {
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-white via-slate-200 to-brand-300 bg-clip-text text-transparent;
+  color: #ffffff;
+  background-image: none;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .grid-bg {
-  background-image:
-    linear-gradient(to right, rgb(30 41 59 / 0.35) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(30 41 59 / 0.35) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, black 20%, transparent 75%);
+  display: none;
 }
 
 @keyframes marquee {
@@ -89,11 +88,19 @@ body {
 }
 
 .portrait-ring {
-  background: linear-gradient(
-    135deg,
-    rgb(59 130 246 / 0.9),
-    rgb(147 197 253 / 0.5),
-    rgb(30 41 59 / 0.8)
-  );
-  padding: 3px;
+  background: #7aa7ff;
+  padding: 1px;
+}
+
+[class*="blur-[120px]"],
+[class*="blur-3xl"],
+[class*="blur-2xl"],
+[class*="blur-xl"] {
+  opacity: 0 !important;
+}
+
+.shadow-lg,
+.shadow-2xl,
+[class*="shadow-["] {
+  box-shadow: none !important;
 }

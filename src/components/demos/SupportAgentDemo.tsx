@@ -69,7 +69,7 @@ export function SupportAgentDemo() {
               className={`flex gap-3 ${msg.role === "user" ? "justify-end" : ""}`}
             >
               {msg.role === "agent" && (
-                <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-violet-500/20 text-violet-400">
+                <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-brand-500/15 text-brand-400">
                   <Bot className="size-4" />
                 </div>
               )}

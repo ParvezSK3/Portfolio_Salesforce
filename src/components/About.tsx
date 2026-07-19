@@ -13,14 +13,14 @@ const focusStyles = [
     border: "group-hover:border-brand-500/40",
   },
   {
-    iconClass: "text-violet-400",
-    glow: "from-violet-500/25",
-    border: "group-hover:border-violet-500/40",
+    iconClass: "text-brand-400",
+    glow: "from-brand-500/20",
+    border: "group-hover:border-brand-500/40",
   },
   {
-    iconClass: "text-emerald-400",
-    glow: "from-emerald-500/25",
-    border: "group-hover:border-emerald-500/40",
+    iconClass: "text-brand-400",
+    glow: "from-brand-500/20",
+    border: "group-hover:border-brand-500/40",
   },
 ];
 
@@ -88,8 +88,8 @@ export function About() {
           Core focus areas
         </h3>
         <p className="mt-2 max-w-2xl text-sm text-slate-500">
-          Three lenses I use on every engagement: platform engineering, AI on
-          Salesforce, and reliable delivery.
+          Three lenses I use on every engagement: platform engineering,
+          integration reliability, and release-ready delivery.
         </p>
 
         <motion.div

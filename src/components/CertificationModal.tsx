@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { BookOpen, X } from "lucide-react";
+import { BookOpen, ExternalLink, X } from "lucide-react";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import type { Certification } from "@/data/portfolio";
@@ -112,6 +112,22 @@ export function CertificationModal({ cert, onClose }: CertificationModalProps) {
               </motion.div>
 
               <motion.div className="px-5 py-5 sm:px-6">
+                <motion.div className="mb-5 flex flex-wrap items-center gap-3 border-b border-slate-800/80 pb-5">
+                  {cert.credentialId && (
+                    <p className="text-xs text-slate-400">
+                      Credential ID: {cert.credentialId}
+                    </p>
+                  )}
+                  <a
+                    href={cert.verificationUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-medium text-brand-300 transition hover:text-brand-200"
+                  >
+                    Verify on Salesforce
+                    <ExternalLink className="size-3.5" />
+                  </a>
+                </motion.div>
                 <motion.div className="flex items-center gap-2 text-sm font-semibold text-white">
                   <BookOpen className="size-4 text-brand-400" />
                   What I learned & practiced

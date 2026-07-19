@@ -8,9 +8,7 @@ import {
   CircleDot,
   Code2,
   MapPin,
-  Sparkles,
   TrendingUp,
-  Users,
   Zap,
 } from "lucide-react";
 import { Section } from "@/components/Section";
@@ -18,11 +16,9 @@ import { experience, experienceSection } from "@/data/portfolio";
 
 const categoryIcons: Record<string, typeof Briefcase> = {
   Salesforce: Code2,
-  "AI Engineering": Sparkles,
-  Leadership: Users,
 };
 
-const highlightMarkers = [Sparkles, Zap, TrendingUp, CircleDot, ArrowUpRight];
+const highlightMarkers = [Zap, TrendingUp, CircleDot, ArrowUpRight];
 
 function companyInitial(company: string) {
   return company
