@@ -32,6 +32,28 @@ export function Header() {
     };
   }, [mobileOpen]);
 
+  function handleMobileNavigation(
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) {
+    event.preventDefault();
+    const targetId = href.slice(1);
+
+    setMobileOpen(false);
+    setActiveHash(href);
+    window.history.pushState(null, "", href);
+
+    // Wait for the menu state to render and release the body scroll lock.
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        document.getElementById(targetId)?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    });
+  }
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-[100] border-b transition-[background-color,border-color,box-shadow] duration-300 ${
@@ -129,7 +151,9 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   className="rounded-xl px-4 py-3 text-sm font-medium text-slate-300 transition hover:bg-slate-900 hover:text-white"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(event) =>
+                    handleMobileNavigation(event, link.href)
+                  }
                 >
                   {link.label}
                 </a>
