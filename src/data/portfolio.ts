@@ -41,7 +41,7 @@ export const aboutContent = {
     {
       title: "CRM development",
       description:
-        "Build and optimize Apex, LWC, Aura, Visualforce, SOQL, Apex Triggers, Salesforce Flows, Platform Events, Custom Metadata, and validation logic for CRM workflows.",
+        "Build and optimize Apex, LWC, Aura, Visualforce, SOQL, Apex Triggers, Salesforce Flow, Platform Events, Custom Metadata, and validation logic for CRM workflows.",
       highlights: ["Apex & LWC", "Salesforce Flow", "SOQL & triggers"],
     },
     {
@@ -63,15 +63,6 @@ export const aboutContent = {
 export const summary = [aboutContent.lead, ...aboutContent.bioParagraphs].join(" ");
 
 export const skillCategories = [
-  {
-    title: "Certifications",
-    skills: [
-      "Platform Developer I",
-      "Administrator",
-      "Platform App Builder",
-      "Agentforce Specialist",
-    ],
-  },
   {
     title: "Salesforce Platform",
     skills: [
@@ -169,8 +160,8 @@ export const experience = [
   {
     role: "Salesforce Developer",
     company: "Snowflake",
-    period: "Jun 2025 to Present",
-    location: "USA",
+    period: "Jun 2025 - Present",
+    location: "Chicago, USA",
     category: "Salesforce",
     accent: "text-brand-400",
     glow: "from-brand-500/20",
@@ -179,14 +170,14 @@ export const experience = [
       "Decreased repeat support tickets by 12% by resolving Salesforce, cloud-hosted service, and REST API integration failures through response analysis, authentication troubleshooting, exception handling, retry logic, and integration logging.",
       "Cut release-review time by 28%, from 90 to 65 minutes, by standardizing Gearset deployment checks, automated Apex testing, Flow activation, and metadata validation.",
       "Coordinated releases with Salesforce developers, QA engineers, business analysts, and GTM stakeholders across sandbox, validation, rollback, and production verification activities.",
-      "Improved GTM workflow reliability by developing and optimizing Apex, LWC, Salesforce Flows, and SOQL logic for lead, account, opportunity, and customer-service processes.",
+      "Improved GTM workflow reliability by developing and optimizing Apex, LWC, Salesforce Flow, and SOQL logic for lead, account, opportunity, and customer-service processes.",
     ],
   },
   {
     role: "CRM Business Systems Analyst",
     company: "Kelley School of Business, Indiana University",
-    period: "Aug 2024 to Jun 2025",
-    location: "USA",
+    period: "Aug 2024 - Jun 2025",
+    location: "Indiana, USA",
     category: "CRM",
     accent: "text-brand-400",
     glow: "from-brand-500/20",
@@ -200,8 +191,8 @@ export const experience = [
   {
     role: "Senior Salesforce Developer",
     company: "IBM",
-    period: "Sep 2022 to Jun 2024",
-    location: "India",
+    period: "Sep 2022 - Jun 2024",
+    location: "Bengaluru, India",
     category: "Salesforce",
     accent: "text-brand-400",
     glow: "from-brand-500/25",
@@ -216,8 +207,8 @@ export const experience = [
   {
     role: "Salesforce Developer",
     company: "Cognizant",
-    period: "Jan 2021 to Sep 2022",
-    location: "India",
+    period: "Jan 2021 - Sep 2022",
+    location: "Hyderabad, India",
     category: "Salesforce",
     accent: "text-brand-400",
     glow: "from-brand-500/25",
@@ -225,7 +216,7 @@ export const experience = [
       "Improved CRM process completion by 27% by architecting Apex, LWC, Aura, SOQL, and Apex Trigger workflows for 3,180 users.",
       "Reduced reconciliation delays by integrating Salesforce with payment gateways, ERP, and marketing platforms through REST APIs, Named Credentials, OAuth, error handling, and secure authentication workflows.",
       "Decreased manual follow-up by 18% by reengineering delayed CRM updates through Batch Apex, Scheduled Apex, Queueable Apex, bulk processing, retry logic, and governor-limit optimization.",
-      "Strengthened automation maintainability by migrating legacy Process Builder workflows to record-triggered Salesforce Flows and Validation Rules.",
+      "Strengthened automation maintainability by migrating legacy Process Builder workflows to record-triggered Salesforce Flow and Validation Rules.",
       "Improved data quality and SLA execution by validating workflow logic, monitoring asynchronous jobs, and coordinating configuration updates with Salesforce administrators and operational stakeholders.",
     ],
   },
@@ -249,7 +240,7 @@ export const projects = [
     tech: [
       "Apex",
       "LWC",
-      "Flows",
+      "Salesforce Flow",
       "Platform Events",
       "Permission Sets",
       "REST APIs",
@@ -263,7 +254,7 @@ export const projects = [
     demoUrl:
       "https://parvezsk3.github.io/crm-case-automation-release-stability/",
     description:
-      "Built a case-triage and escalation workflow using LWC, Apex, Salesforce Flows, and Platform Events, reducing manual case-review steps by 29% during testing. Integrated an external status service through REST APIs and a custom LWC, adding pre-deployment validation for Salesforce DX and Git to reduce release rework by 18%.",
+      "Built a case-triage and escalation workflow using LWC, Apex, Salesforce Flow, and Platform Events, reducing manual case-review steps by 29% during testing. Integrated an external status service through REST APIs and a custom LWC, adding pre-deployment validation for Salesforce DX and Git to reduce release rework by 18%.",
   },
   {
     id: "case-triage",
@@ -298,7 +289,7 @@ export const projects = [
       "LWC",
       "Apex",
       "SOQL",
-      "Salesforce Flows",
+      "Salesforce Flow",
       "Platform Events",
       "REST APIs",
       "Named Credentials",
@@ -311,7 +302,7 @@ export const projects = [
     demoUrl:
       "https://parvezsk3.github.io/service-case-automation-support-console/",
     description:
-      "Built a support case console using LWC, Apex, SOQL, and Salesforce Flows to create, route, update, and escalate cases, reducing manual review steps by 31.2% during testing. Implemented SLA-based routing, REST API status lookups, and integration logging using Custom Metadata, Platform Events, Batch Apex, Queueable Apex, Named Credentials, and OAuth, reducing overdue case follow-up time by 22%.",
+      "Built a support case console using LWC, Apex, SOQL, and Salesforce Flow to create, route, update, and escalate cases, reducing manual review steps by 31.2% during testing. Implemented SLA-based routing, REST API status lookups, and integration logging using Custom Metadata, Platform Events, Batch Apex, Queueable Apex, Named Credentials, and OAuth, reducing overdue case follow-up time by 22%.",
   },
 ];
 
@@ -326,7 +317,7 @@ export const achievements = [
     id: "red-cross-cpr-aed",
     title: "Adult First Aid/CPR/AED Certification",
     issuer: "American Red Cross",
-    period: "Completed May 2025 | Valid through May 2027",
+    period: "May 2025 - May 2027",
     result: "Life-safety certification",
     summary:
       "Completed hands-on Adult First Aid/CPR/AED training through IU Recreational Sports at Indiana University Bloomington.",
@@ -480,9 +471,9 @@ export const education = [
     badge: "Graduate",
     program: "MS in Computer Science",
     school: "Indiana University Bloomington",
-    period: "Aug 2024 to May 2026",
+    period: "Aug 2024 - May 2026",
     location: "Bloomington, Indiana, USA",
-    status: "May 2026",
+    status: "Graduated May 2026",
     accent: "text-brand-400",
     glow: "from-brand-500/20",
     highlightLabels: ["Graduate study", "CRM delivery", "Platform work"],
@@ -498,7 +489,7 @@ export const education = [
     program:
       "Bachelor of Technology in Computer Science & Engineering",
     school: "Gayatri Vidya Parishad College of Engineering",
-    period: "Aug 2017 to Apr 2021",
+    period: "Aug 2017 - Apr 2021",
     location: "Visakhapatnam, Andhra Pradesh, India",
     accent: "text-brand-400",
     glow: "from-brand-500/20",

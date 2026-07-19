@@ -20,8 +20,9 @@ export function AboutSkillsBridge() {
               Certified & building
             </p>
             <p className="mt-1.5 max-w-xl text-sm text-slate-400">
-              {siteConfig.availability}. Three Salesforce credentials across
-              development, platform administration, and app building.
+              {siteConfig.availability}. {certifications.length} Salesforce
+              credentials across development, platform administration, app
+              building, and Agentforce.
             </p>
           </motion.div>
           <a

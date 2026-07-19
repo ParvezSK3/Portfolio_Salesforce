@@ -12,7 +12,7 @@ import {
   Zap,
   type LucideIcon,
 } from "lucide-react";
-import { siteConfig } from "@/data/portfolio";
+import { certifications, siteConfig } from "@/data/portfolio";
 
 const stats: {
   value: string;
@@ -47,7 +47,7 @@ const stats: {
     glow: "from-brand-500/20",
   },
   {
-    value: "3",
+    value: String(certifications.length),
     label: "Certifications",
     tag: "Credentials",
     icon: Award,

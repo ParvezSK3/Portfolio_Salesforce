@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-slate-800/80 py-10">
       <div className="section-container flex flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-sm text-slate-500">
-          © {year} {siteConfig.name}.
+          &copy; {year} {siteConfig.name}.
         </p>
         <div className="flex flex-wrap justify-center gap-6 text-sm sm:justify-end">
           <a

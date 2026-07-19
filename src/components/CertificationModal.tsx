@@ -85,7 +85,7 @@ export function CertificationModal({ cert, onClose }: CertificationModalProps) {
 
             <motion.div className="overflow-y-auto">
               <motion.div className="border-b border-slate-800/80 bg-slate-950/50 p-4 sm:p-5">
-                <motion.div className="relative mx-auto aspect-[4/3] max-h-[min(50vh,420px)] w-full overflow-hidden rounded-xl border border-slate-800 bg-slate-950">
+                <motion.div className="relative mx-auto aspect-video max-h-[min(50vh,420px)] w-full overflow-hidden rounded-xl border border-slate-800 bg-slate-950">
                   {!imageError ? (
                     <Image
                       src={cert.credentialImage}

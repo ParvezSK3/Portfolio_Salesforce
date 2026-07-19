@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import {
   Bot,
-  Calendar,
   Database,
   ExternalLink,
   Sparkles,
@@ -69,10 +68,6 @@ export function Projects() {
                         Flagship
                       </span>
                     )}
-                    <span className="inline-flex items-center gap-1 text-xs text-slate-500">
-                      <Calendar className="size-3" />
-                      {project.period}
-                    </span>
                   </div>
 
                   <h3
